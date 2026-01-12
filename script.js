@@ -38,9 +38,9 @@ function renderCard(song) {
     //   </div>
     // </div>
     const col = document.createElement("div");
-    col.classList.add("col");
+    col.classList.add("col", "d-flex", "mb-4");
     const card = document.createElement("div");
-    card.classList.add("card")
+    card.classList.add("card", "h-100", "w-100");
     col.appendChild(card);
     // const img = document.createElement("img");
     // img.classList.add("card-img-top");
@@ -50,8 +50,8 @@ function renderCard(song) {
     img.classList.add("card-img-top")
     img.style.backgroundImage = "url(" + song.album.cover_medium + ")"
     img.style.backgroundSize = "cover";
-    img.style.height = "300px"
-    img.style.backgroundPosition = "center"
+    img.style.height = "200px"
+    // img.style.backgroundPosition = "center"
     card.appendChild(img);
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
